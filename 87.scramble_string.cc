@@ -101,21 +101,18 @@ class DP : public Solution {
         }
 };
 
+void execute(Solution *s) {
+    cout << s->isScramble("great", "rgate") << endl;
+}
 
 int main() {
 
     Recursive r;
     RecursiveWithCache rc;
     DP dp;
-    
-    Solution *s = &r;
-    cout << s->isScramble("great", "rgate") << endl;
 
-    s = &rc;
-    cout << s->isScramble("great", "rgate") << endl;
-
-    s = &dp;
-    cout << s->isScramble("abcd", "bdac") << endl;
-
+    execute(&r);
+    execute(&rc);
+    execute(&dp);
     return 0;
 }
