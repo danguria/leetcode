@@ -14,7 +14,7 @@ class Recursive : public Solution {
             if (start == end) return path.size() - 1;
 
             int min = INT_MAX;
-            for (auto seq : bank) {
+            for (string new_string : bank) {
                 int similarity = 0;
                 for (int j = 0; j < start.size(); j++)
                     if (start[j] != seq[j]) similarity++;
