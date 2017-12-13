@@ -30,7 +30,7 @@ class Solution {
             //    if map has remain as a key
             //        return index of n and the value of remain stored in map
             //    else
-            //        store (remain, index of n) to the map
+            //        store (n, index of n) to the map
             //
             unordered_map<int, int> map;
             vector<int> answer;
